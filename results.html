@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RandomLeague - Kết quả thi đấu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased">
+
+  <div id="navbar-container"></div>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <div class="text-center mb-10 fade-in">
+      <h1 class="text-4xl md:text-5xl font-bold font-display mb-3 text-white">Kết Quả Thi Đấu</h1>
+      <p class="text-gray-400">Cập nhật tỉ số các trận đấu mới nhất</p>
+    </div>
+
+    <!-- Nơi render Results -->
+    <div id="results-container"></div>
+  </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RandomLeague - Bảng Xếp Hạng</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Trang web quản lý giải đấu bóng đá 3 đội Sodapop, Chiến Lang, Thiết Thành.">
+</head>
+<body class="antialiased">
+
+  <div id="navbar-container"></div>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <div class="text-center mb-12 fade-in">
+      <h1 class="text-5xl md:text-7xl font-extrabold font-display mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 tracking-tight">
+        RANDOM LEAGUE 2026
+      </h1>
+      <p class="text-xl text-gray-400">Giải đấu bóng đá thường niên</p>
+    </div>
+
+    <!-- Nơi render BXH Tổng -->
+    <div id="rankings-container" class="mb-12"></div>
+
+    <!-- Nơi render xếp hạng từng vòng -->
+    <div class="mt-16">
+      <h2 class="text-3xl font-bold font-display mb-6 text-white text-center">Hệ số từng vòng</h2>
+      <div id="round-rankings-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </main>
+
+  <footer class="mt-20 py-8 text-center text-gray-500 text-sm border-t border-white/5">
+    <p>&copy; 2026 RandomLeague. Dữ liệu được đồng bộ từ Google Sheets.</p>
+  </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
